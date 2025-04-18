@@ -26,7 +26,7 @@
             document.addEventListener(
                 'WeixinJSBridgeReady',
                 function() {
-                    createjs.Sound.registerSound('bgmusic.mp3', 'sound'); // 注意,这句registerSound必须写在WeixinJSBridgeReady回调函数内才行,否则下方createjs.Sound.play就会无效
+                    createjs.Sound.registerSound('http://www.lzuntalented.cn/assets/music/sweet.mp3', 'sound'); // 注意,这句registerSound必须写在WeixinJSBridgeReady回调函数内才行,否则下方createjs.Sound.play就会无效
                     makeLog('WeixinJSBridgeReady');
                     var intInstance = setInterval(function() {
                         if (soundLoadComplete) {
